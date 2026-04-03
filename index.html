@@ -169,10 +169,29 @@
       color: #aab0c4;
       text-align: right;
     }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 20px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: #4f6ef7;
+      text-decoration: none;
+      opacity: 0.75;
+      transition: opacity 0.15s;
+    }
+
+    .back-link:hover { opacity: 1; }
   </style>
 </head>
 <body>
   <div class="app">
+    <a href="https://micmaru.github.io" class="back-link">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2L4 7l5 5"/></svg>
+      Back to Portfolio
+    </a>
     <h1>To-Do List</h1>
     <div class="input-row">
       <input type="text" id="task-input" placeholder="Add a new task..." maxlength="200">
